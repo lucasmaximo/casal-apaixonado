@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --cor-primaria: #E26EE5;
+    --cor-secundaria: #FCF8F3;
+    --cor-terciaria: #7E30E1;
+    --cor-alternativa: #49108B;
+
+    --fonte-primaria: "Wittgenstein", serif;
+    --fonte-secundaria: "Domine", serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    background-color: var(--cor-primaria);
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid var(--cor-alternativa);
+}
+.cabecalho__links__link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: var(--fonte-primaria);
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--cor-alternativa);
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.cabecalho__links__link:hover {
+    background-color: var(--cor-alternativa);
+    color: var(--cor-secundaria);
+}
+.cabecalho__links__link.ativo {
+    background-color: var(--cor-alternativa);
+    color: var(--cor-secundaria);
+}
+.corpo {
+    background-color: var(--cor-secundaria);
+    padding: 6% 3% 2% 3%;
+}
+.corpo__inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding-bottom: 5%;
+}
+.corpo__inicio__titulo {
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 35px;
+    color: var(--cor-terciaria);
+    font-weight: 700;
+}
+.corpo__inicio__imagem {
+    width: 361px;
+    height: 448px;
+    border-radius: 10px;
+    transition: filter 0.5s ease;
+    border: 1px solid var(--cor-alternativa);
+}
+.corpo__inicio__imagem:hover {
+    filter: brightness(0.7);
+}
+.corpo__carta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    padding-bottom: 5%;
+}
+.corpo__carta__texto {
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-terciaria);
+    font-size: 18px;
+    text-align: center;
+}
+.corpo__fotos{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.corpo__galeriafotos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px 80px;
+}
+.corpo__galeriafotos__foto {
+    max-width: 600px;
+    max-height: 400px;
+    border-radius: 10px;
+    transition: filter 0.5s ease;
+    border: 1px solid var(--cor-alternativa);
+}
+.corpo__galeriafotos__foto:hover {
+    filter: brightness(0.7);
+}
