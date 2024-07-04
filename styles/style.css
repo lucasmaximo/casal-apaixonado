@@ -94,6 +94,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 35px;
+    padding-bottom: 1%;
 }
 .corpo__galeriafotos {
     display: flex;
@@ -110,4 +111,15 @@ body {
 }
 .corpo__galeriafotos__foto:hover {
     filter: brightness(0.7);
+}
+.rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-primaria);
+    color: var(--cor-alternativa);
+    font-family: var(--fonte-primaria);
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0.5%;
 }
